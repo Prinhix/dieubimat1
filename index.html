@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giải mã số bên dưới để nhập đúng 4 số:</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: "Times New Roman", serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    h1 { color: black; font-size: 28px; }
+    p { font-size: 22px; color: black; margin-bottom: 30px; }
+    input {
+      padding: 10px;
+      font-size: 18px;
+      width: 150px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: "Times New Roman", serif;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-top: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: "Times New Roman", serif;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Giải đúng mã bên dưới để lấy mã 4 số</h1>
+  <h1>Mã:</h1>
+  <p>-.-- --- ..- .-. -... .. .-. - .... -.. .- -.--</p>
+  <input type="text" id="code" maxlength="4" placeholder="Nhập 4 số">
+  <br>
+  <button onclick="checkCode()">Truy cập</button>
+  <script>
+    function checkCode() {
+      var code = document.getElementById("code").value;
+      if(code === "2805") {
+        window.location.href = "https://prinhix.github.io/dieubimat/"; 
+      } else {
+        alert("Sai rồi bạn yêu, nhập lại đi!");
+      }
+    }
+  </script>
+</body>
+</html>
